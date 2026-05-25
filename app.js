@@ -10,6 +10,7 @@ import Divider from "./components/Divider.js";
 //importamos el componente card
 import Card from "./components/Cards.js";
 import Navbar from "./components/Navbar.js";
+import Avatar from "./components/Avatar.js";
 const app = document.getElementById("app");
 
 Renderer.render(
@@ -83,6 +84,22 @@ Renderer.render(
 
     new Navbar({
         title: "Mi Navbar"
+    }),
+
+    app
+
+);
+Renderer.render(
+    new Divider(),
+    app
+);
+
+Renderer.render(
+
+    new Avatar({
+        src: "src/desarrollador.webp",
+        name: "Juan Pérez",
+        role: "Desarrollador"
     }),
 
     app
