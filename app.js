@@ -11,6 +11,7 @@ import Divider from "./components/Divider.js";
 import Card from "./components/Cards.js";
 import Navbar from "./components/Navbar.js";
 import Avatar from "./components/Avatar.js";
+import Modal from "./components/Modal.js";
 const app = document.getElementById("app");
 
 Renderer.render(
@@ -104,4 +105,19 @@ Renderer.render(
 
     app
 
+);
+
+Renderer.render(
+    new Divider(),
+    app
+);
+
+
+Renderer.render(
+
+    new Modal({
+        title: "Mi Modal",
+        content: "Este es el contenido de mi modal"
+    }),
+    app
 );
